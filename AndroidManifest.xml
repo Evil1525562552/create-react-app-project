@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.bb"
+      android:versionCode="4"
+      android:versionName="1.2.1">
+     
+     
+
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+   	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+     
+ 
+	<!-- 读写SD卡权限-->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+   
+     
+    <application  android:label="@string/app_name"
+       		      android:icon="@drawable/bg1"
+        >
+        
+
+		<activity android:name="edu.self.LoginActivity"  android:label="@string/app_name" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity   android:name="edu.self.RegisterAccountActivity"    android:screenOrientation="portrait"/>
+        
+		
+        
+		<activity android:name=".Main" android:label="主页" android:screenOrientation="portrait"/>
+            
+        <activity android:name=".About" android:label="关于" android:screenOrientation="portrait"/>
+        <activity android:name=".Logout" android:label="退出" android:screenOrientation="portrait"/>
+        
+		<activity android:name=".ui.Foods" android:label="影院管理系统" android:screenOrientation="portrait"/>
+		<activity android:name=".ui.FoodsList" android:label="影院管理系统" android:screenOrientation="portrait"/>
+	
+		<activity android:name=".ui.ViewInfoActivity" android:label="影院管理系统" android:screenOrientation="portrait"/>
+			
+		
+		<activity android:name=".ui.MyListActivity" android:label="我的订单" android:screenOrientation="portrait"/>
+		<activity android:name=".ui.UpdateUserInfoActivity" android:label="修改信息" android:screenOrientation="portrait"/>  
+		<activity android:name=".ui.UserInfoActivity" android:label="我的信息" android:screenOrientation="portrait"/>  
+		
+		
+		
+		<activity android:name=".ui.FoodInfoActivity" android:label="查看详细" android:screenOrientation="portrait"/>
+		<activity android:name="edu.self.DingdanActivity" android:label="订单详情" android:screenOrientation="portrait"/>    
+		<activity android:name=".ui.NewsInfoActivity" android:label="查看详细" android:screenOrientation="portrait"/>
+		
+		
+		<activity android:name=".ui.GwcListActivity" android:label="查看详细" android:screenOrientation="portrait"/>  
+		<activity android:name=".ui.SearchListActivity" android:label="搜索详情" android:screenOrientation="portrait"/>
+		
+		<activity android:name="edu.self.AllResourceActivity" android:label="所有信息"></activity>
+		<activity android:name="edu.self.MyResourceActivity" android:label="我的信息"></activity>
+		<activity android:name="edu.self.InfoActivity" android:label="信息"></activity>
+		<activity android:name="edu.self.UpdateResourceActivity" android:label="修改信息"></activity>
+		<activity android:name="edu.self.NewResourceActivity" android:label="添加信息"></activity>
+		<activity android:name="edu.self.UserInfoActivity" android:label="用户信息"></activity>
+		<activity android:name="edu.self.UpdateUserInfoActivity" android:label="修改用户信息"></activity>
+		
+		
+		
+    </application>
+    
+    <uses-sdk android:minSdkVersion="8" />
+    
+      
+    
+    
+</manifest> 
